@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Welcome
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<body class="body">
+
+<!-- Navigation section  -->
+<div class="navbar">
+  <ul>
+    <li class="home"><a href="#home">Home</a></li>
+    <li class="about us"><a href="#about">About Us</a></li>
+    <li class="events"><a href="#events">Events</a></li>
+    <li class="photos"><a href="#photos">Photos</a></li>
+    <li class="contact"><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Landing page section  -->
+
+<section id="home" class="landing-section landing-main">
+  <h1 class="title">Mustard Seed Ministry</h1>
+  <h2 class="landing-main-text"> Welcome!</h2>
+</section>
+
+<!-- About Us section  -->
+
+<section id="about">
+  <div class="container">
+    <div class=”row”>
+      <h1 class="sectionTitle">Who are we?</h1>
+      <p class="sectionParagraph">Mustard Seed Ministry is an on-campus Christian ministry with the
+        purpose of being and making disciples of Christ. We provide many avenues to grow in faith
+        and mature in our relationship with God, such as discipleship training and tight-knit small
+        groups. Our hope for those in our ministry is to be a people who journey to know Jesus more
+        and to make Him known. </p>
+      </div>
+    </div>
+</section>
+
+<!-- Events section  -->
+
+<section id="events">
+  <div class="container">
+    <div class=”row”>
+      <h1 class="sectionTitle">Upcoming Events</h1>
+      <p class="sectionParagraph">Sunday English Ministry Service</p>
+      <p class="sectionParagraph">When: Every Sunday @ 11:40 AM</p>
+      <p class="sectionParagraph">Where: Davis Korean Church</p>
+      <p class="sectionParagraph">Large Group</p>
+      <p class="sectionParagraph">When: Every Friday @ 7:30 PM</p>
+      <p class="sectionParagraph">Where: UC Davis, Young 198</p>
+      <p class="sectionParagraph">Join us for a time of worship,
+        fellowship with fellow brothers and sisters, and a time
+        to get into God's Word.</p>
+      </div>
+    </div>
+</section>
+
+<!-- Photos section  -->
+
+<section id="photos">
+  <div class="container">
+    <div class=”row”>
+      <h1 class="sectionTitle">Photo Gallery</h1>
+      <p class="sectionParagraph">Take a look at our photo gallery!</p>
+      </div>
+    </div>
+</section>
+
+<!-- Contact Us section  -->
+
+<section id="contact">
+  <div class="container">
+    <div class=”row”>
+      <h1 class="sectionTitle">Contact Us!</h1>
+      <p class="sectionParagraph">Email: msmucdavis@gmail.com</p>
+      </div>
+    </div>
+</section>
+
+<!-- Footer section  -->
+
+<footer>
+    <div class="row">
+      <div class="col-sm-5 copyright">
+        <p>
+          Copyright &copy; 2020 Mustard Seed Ministry
+        </p>
+    </div>
+    <div class="col-sm-5 footer-social-icon">
+      <ul>
+        <li><a href="https://www.facebook.com/msmucdavis/" <i class="fab fa-facebook"></i>></a></li>
+        <li><a href="https://www.instagram.com/msm.ucdavis/" <i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'website/js/smoothscroll.js' %}"></script>
+{% endblock %}
