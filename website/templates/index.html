@@ -16,7 +16,7 @@
 <!-- Navigation section  -->
 <div class="navbar">
   <ul>
-    <li class="home"><a href="#home">Home</a></li>
+    <li class="home"><a href="#home" class="pull-left">Home</a></li>
     <li class="about us"><a href="#about">About Us</a></li>
     <li class="events"><a href="#events">Events</a></li>
     <li class="photos"><a href="#photos">Photos</a></li>
@@ -27,8 +27,7 @@
 <!-- Landing page section  -->
 
 <section id="home" class="landing-section landing-main">
-  <h1 class="title">Mustard Seed Ministry</h1>
-  <h2 class="landing-main-text"> Welcome!</h2>
+  <h1 class="title"><img src="/static/admin/img/MSMLogo-2.jpg" width="200"></h1>
 </section>
 
 <!-- About Us section  -->
@@ -37,11 +36,15 @@
   <div class="container">
     <div class=”row”>
       <h1 class="sectionTitle">Who are we?</h1>
-      <p class="sectionParagraph">Mustard Seed Ministry is an on-campus Christian ministry with the
-        purpose of being and making disciples of Christ. We provide many avenues to grow in faith
-        and mature in our relationship with God, such as discipleship training and tight-knit small
-        groups. Our hope for those in our ministry is to be a people who journey to know Jesus more
-        and to make Him known. </p>
+      <p class="sectionParagraph">Mustard Seed Ministry is an on-campus Christian
+        ministry that is affiliated with Davis Korean Church with the purpose of
+        being and making disciples of Christ. Our Vision is to know our identity
+        in Christ through spiritual nurturing and accountability.</p>
+        <p class="sectionParagraph">As a ministry, MSM exists to: 1. Exalt (up-reach): glorify God in all
+        that they do 2. Equip (in-reach): train the church to be fully functioning
+        disciples 3. Edify (in-reach): provide a safe harbor for genuine fellowship
+        4. Evangelize (outreach): share the love of God as the salt and
+        light of the world.</p>
       </div>
     </div>
 </section>
@@ -71,7 +74,7 @@
   <div class="container">
     <div class=”row”>
       <h1 class="sectionTitle">Photo Gallery</h1>
-      <p class="sectionParagraph">Take a look at our photo gallery!</p>
+      <p class="sectionParagraph">Check it out <a href="photogallery">here!</a></p>
       </div>
     </div>
 </section>
@@ -112,4 +115,5 @@
 
 {% block js %}
     <script src="{% static 'website/js/smoothscroll.js' %}"></script>
+    <script src="{% static 'website/js/navbar.js' %}"></script>
 {% endblock %}

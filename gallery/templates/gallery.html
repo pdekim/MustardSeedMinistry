@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Welcome
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<body class="body">
+
+<!-- Navigation section  -->
+<div class="navbar">
+  <ul>
+    <li class="home"><a href="#home" class="pull-left">Home</a></li>
+    <li class="about us"><a href="#about">About Us</a></li>
+    <li class="events"><a href="#events">Events</a></li>
+    <li class="photos"><a href="#photos">Photos</a></li>
+    <li class="contact"><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Landing page section  -->
+
+<section id="home" class="landing-section landing-main">
+  <h1 class="title"><img src="/static/admin/img/MSMLogo-2.jpg" width="200"></h1>
+</section>
+
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'website/js/smoothscroll.js' %}"></script>
+    <script src="{% static 'website/js/navbar.js' %}"></script>
+{% endblock %}

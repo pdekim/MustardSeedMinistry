@@ -25,7 +25,7 @@ h1, h2{
   font-variant: small-caps;
   font-weight: 300;
   font-size: 60px;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-name: fadeIn;
 }
 
@@ -63,13 +63,14 @@ h1, h2{
 .navbar {
   width: 100vw;
   margin: 0;
+  transition: top 0.3s;
 }
 
 .navbar ul {
   position: fixed;
-  top: 0;
   width: 100%;
   margin: 0;
+  top: 0;
   padding: 0;
   height: 60px;
   left: 0;
@@ -95,7 +96,9 @@ h1, h2{
 .navbar a:hover {
   color: #C6E9FF;
   text-decoration: none;
+  transition: .6s
 }
+
 
 /* Section Style */
 
@@ -130,7 +133,7 @@ h1, h2{
 /* Events Section  */
 
 #events {
-  background-color: #FFFAFA;
+  background-color: #F3EFC6;
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -154,7 +157,7 @@ h1, h2{
 /* Contact Section  */
 
 #contact {
-  background-color: #FFFAFA;
+  background-color: #F3EFC6;
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -166,20 +169,21 @@ h1, h2{
 /* Footer  */
 
 .copyright {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .copyright p {
   margin: 0;
   color: #FFFAFA;
   text-align: center;
-  height: 60px;
+  height: 30px;
 }
 
 .footer-social-icon {
   width: 100%;
   height: auto;
   margin: auto;
+  margin-right: 10px;
 }
 
 .footer-social-icon ul {
@@ -187,6 +191,11 @@ h1, h2{
   padding: 0px;
   height: 50px;
   text-align: center;
+}
+
+.footer-social-icon ul li a:hover {
+  color: #808080;
+  text-decoration: none;
 }
 
 .footer-social-icon ul li {
